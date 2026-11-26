@@ -1,0 +1,32 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+<div class="banner">
+  <h2>Free Dessert With Every Dinner</h2>
+  <p>Join us this weekend for fresh curries and warm bread.</p>
+</div>
+
+<div class="row">
+  <div class="box">
+    <h2>Our New Menu</h2>
+    <img src="{% static 'home/images/food1.png' %}">
+    <p>Grilled skewers and biryani.</p>
+    <a href="{% url 'menu' %}">See our new menu</a>
+  </div>
+
+  <div class="box">
+    <h2>Book a table</h2>
+    <img src="{% static 'home/images/food2.png' %}">
+    <p>Reserve online or call us.</p>
+    <a href="{% url 'contact' %}">Book your table now</a>
+  </div>
+
+  <div class="box">
+    <h2>Opening Hours</h2>
+    <img src="{% static 'home/images/chef.png' %}">
+    <p>Mon - Fri: 12pm - 10pm</p>
+    <p>Sat: 12pm - 11pm</p>
+    <p>Sun: 12pm - 9pm</p>
+  </div>
+</div>
+{% endblock %}

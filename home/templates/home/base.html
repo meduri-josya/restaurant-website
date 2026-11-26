@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Saffron Table</title>
+  <link rel="stylesheet" href="{% static 'home/style.css' %}">
+</head>
+<body>
+  <h1>SAFFRON TABLE</h1>
+
+  <nav>
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'menu' %}">Menu</a>
+    <a href="{% url 'administration' %}">Administration</a>
+    <a href="{% url 'contact' %}">Contact Us</a>
+  </nav>
+
+  {% block content %}{% endblock %}
+
+  <footer>Designed and Developed by Meduri Josya Sree</footer>
+</body>
+</html>
